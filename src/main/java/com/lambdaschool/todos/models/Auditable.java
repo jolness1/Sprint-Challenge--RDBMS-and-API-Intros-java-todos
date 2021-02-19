@@ -57,4 +57,23 @@ abstract class Auditable
     @LastModifiedDate
     @Temporal(TIMESTAMP)
     protected Date lastmodifieddate;
+
+// Comment this out to not return this info to user via request
+// With these getters, info returned to client, without only avail in DB
+
+    public String getCreatedby() {
+        return createdby;
+    }
+
+    public Date getCreateddate() {
+        return createddate;
+    }
+
+    public String getLastmodifiedby() {
+        return lastmodifiedby;
+    }
+
+    public Date getLastmodifieddate() {
+        return lastmodifieddate;
+    }
 }
