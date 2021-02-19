@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService
     private UserAuditing userAuditing;
 
     @Autowired
-    ToDosService toDosService;
+    TodosService toDosService;
 
     public User findUserById(long id) throws EntityNotFoundException
     {

@@ -3,7 +3,7 @@ package com.lambdaschool.todos.controllers;
 import com.lambdaschool.todos.TodosApplicationTests;
 import com.lambdaschool.todos.models.Todos;
 import com.lambdaschool.todos.models.User;
-import com.lambdaschool.todos.services.ToDosService;
+import com.lambdaschool.todos.services.TodosService;
 import com.lambdaschool.todos.services.UserService;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.junit.After;
@@ -38,7 +38,7 @@ public class TodosControllerIntegrationTest
     UserService userService;
 
     @Autowired
-    ToDosService todosService;
+    TodosService todosService;
 
     @Before
     public void setUp() throws Exception
